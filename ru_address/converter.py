@@ -67,7 +67,7 @@ class Converter:
             definition.convert_and_dump(dump_file)
 
         if skip_data is False:
-            source_filepath = self.get_source_filepath(table, 'xml')
+            source_filepath = self.get_source_filepath(table, 'XML')
             data = Data(table, source_filepath)
             if self.beta:
                 data.convert_and_dump_v2(dump_file, definition, batch_size)
